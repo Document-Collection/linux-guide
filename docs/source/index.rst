@@ -7,10 +7,12 @@ linux指南
 =====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 目录:
 
+   system-related/更换国内源
    system-related/Thinkpad T470p安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
    system-related/Ubuntu 16.04安装cuda和cudnn
+   system-related/Ubuntu 16.04-桌面美化
 
    tools/xmind
