@@ -12,3 +12,5 @@ linux指南
 
    system-related/Thinkpad T470p安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
    system-related/Ubuntu 16.04安装cuda和cudnn
+
+   tools/xmind
