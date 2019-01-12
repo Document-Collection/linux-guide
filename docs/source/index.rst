@@ -10,4 +10,4 @@ linux指南
    :maxdepth: 2
    :caption: 目录:
 
-   Thinkpad T470p安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
+   others/Thinkpad T470p安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
