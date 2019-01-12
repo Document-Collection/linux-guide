@@ -3,18 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to linux指南's documentation!
+linux指南
 =====================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 目录:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   Thinkpad T470p安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
