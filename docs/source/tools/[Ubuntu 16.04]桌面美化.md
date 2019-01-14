@@ -23,7 +23,7 @@
 
 ## 安装主题和图标
 
-我使用参考里提供的`Flatabulous`主题和`Ultra-flat`图标
+### `Flatabulous`主题和`Ultra-flat`图标
 
     sudo add-apt-repository ppa:noobslab/themes
     sudo apt-get update
@@ -40,6 +40,15 @@
 点击`Theme`，选择`Flatabolous`主题
 
 点击`Icons`，选择`Ultra-flat`主题
+
+### Numix daily主题和Numix图标
+
+参考：[Ubuntu下使用Unity Tweak Tool 安装Numix图标主题](https://www.linuxidc.com/Linux/2015-09/123585.htm)
+
+    sudo apt-add-repository ppa:numix/ppa 
+    sudo apt-get update 
+    sudo apt-get install numix-icon-theme-circle
+    sudo apt-get install numix-gtk-theme
 
 ## 设置桌面背景
 
