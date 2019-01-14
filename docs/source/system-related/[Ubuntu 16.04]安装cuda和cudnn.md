@@ -1,5 +1,5 @@
 
-# Ubuntu 16.04安装cuda和cudnn
+# [Ubuntu 16.04]安装cuda和cudnn
 
 之前已安装好了`Nvidia`显卡驱动，这一步安装`cuda`和`cudnn`
 

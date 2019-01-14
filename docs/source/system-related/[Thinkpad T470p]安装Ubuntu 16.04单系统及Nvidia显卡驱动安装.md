@@ -1,4 +1,4 @@
-# Thinkpad T470p安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
+# [Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
 
 今天在`Thinkpad T470p`上面重新安装了`Ubuntu16.04`以及`Nvidia`显卡驱动，整个安装过程比之前在其他电脑上安装快很多
 

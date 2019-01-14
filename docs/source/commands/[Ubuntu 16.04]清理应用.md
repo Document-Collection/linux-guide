@@ -1,5 +1,5 @@
 
-# Ubuntu 16.04清理应用
+# [Ubuntu 16.04]清理应用
 
 参考：[ubuntu安装和查看已安装软件](https://blog.csdn.net/coolcooljob/article/details/80547527)
 

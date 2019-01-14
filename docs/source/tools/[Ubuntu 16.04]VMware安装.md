@@ -1,5 +1,5 @@
 
-# Ubuntu 16.04 VMware安装
+# [Ubuntu 16.04]VMware安装
 
 在`Ubuntu`上安装`vmware`后遇到了一些问题，总结一下
 
