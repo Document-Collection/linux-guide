@@ -15,6 +15,7 @@ linux指南
    system-related/[Ubuntu 16.04]安装cuda和cudnn
    system-related/[Thinkpad T470p][Ubuntu 16.04]双显卡配置
    system-related/[Ubuntu 16.04]系统备份
+   system-related/[Ubuntu 16.04]启动器制作
    
    tools/[Ubuntu 16.04]桌面美化
    tools/思维导图xmind
