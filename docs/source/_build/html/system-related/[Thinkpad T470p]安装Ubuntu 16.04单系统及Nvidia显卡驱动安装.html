@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装 &mdash; linux指南 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="[Ubuntu 16.04]安装cuda和cudnn" href="[Ubuntu 16.04]安装cuda和cudnn.html" />
+    <link rel="prev" title="更换国内源" href="更换国内源.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> linux指南
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="更换国内源.html">更换国内源</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">笔记本查询</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu16-04"><code class="docutils literal notranslate"><span class="pre">Ubuntu16.04</span></code>安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#u"><code class="docutils literal notranslate"><span class="pre">U</span></code>盘制作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">U</span></code>盘安装</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nvidia"><code class="docutils literal notranslate"><span class="pre">Nvidia</span></code>显卡驱动安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">下载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">预处理</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">安装驱动</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]安装cuda和cudnn.html">[Ubuntu 16.04]安装cuda和cudnn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Thinkpad T470p][Ubuntu 16.04]双显卡配置.html">[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]系统备份.html">[Ubuntu 16.04]系统备份</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]启动器制作.html">[Ubuntu 16.04]启动器制作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]桌面美化.html">[Ubuntu 16.04]桌面美化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/思维导图xmind.html">Ubuntu16.04 xmind</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]VMware安装.html">[Ubuntu 16.04]VMware安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/[Ubuntu 16.04]清理应用.html">[Ubuntu 16.04]清理应用</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">linux指南</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/system-related/[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="thinkpad-t470p-ubuntu-16-04nvidia">
+<h1>[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装<a class="headerlink" href="#thinkpad-t470p-ubuntu-16-04nvidia" title="永久链接至标题">¶</a></h1>
+<p>今天在<code class="docutils literal notranslate"><span class="pre">Thinkpad</span> <span class="pre">T470p</span></code>上面重新安装了<code class="docutils literal notranslate"><span class="pre">Ubuntu16.04</span></code>以及<code class="docutils literal notranslate"><span class="pre">Nvidia</span></code>显卡驱动，整个安装过程比之前在其他电脑上安装快很多</p>
+<p>不过还是出现了一些问题，记录其中的关键点</p>
+<hr class="docutils" />
+<div class="section" id="id1">
+<h2>笔记本查询<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>参考<a class="reference external" href="https://www.jianshu.com/p/013dce15a106">thinkpad t470p 安装ubuntu16.04</a>才知道可在<code class="docutils literal notranslate"><span class="pre">Ubuntu</span></code>官网上查询你的笔记本或者台式机是否能够很好的匹配<code class="docutils literal notranslate"><span class="pre">Ubuntu</span></code>，</p>
+<p>查询地址：<a class="reference external" href="https://certification.ubuntu.com/desktop/">Ubuntu Desktop certified hardware</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="ubuntu16-04">
+<h2><code class="docutils literal notranslate"><span class="pre">Ubuntu16.04</span></code>安装<a class="headerlink" href="#ubuntu16-04" title="永久链接至标题">¶</a></h2>
+<div class="section" id="u">
+<h3><code class="docutils literal notranslate"><span class="pre">U</span></code>盘制作<a class="headerlink" href="#u" title="永久链接至标题">¶</a></h3>
+<p>使用软件<a class="reference external" href="https://baike.baidu.com/item/Universal%20USB%20Installer">Universal USB Installer</a></p>
+</div>
+<div class="section" id="id2">
+<h3><code class="docutils literal notranslate"><span class="pre">U</span></code>盘安装<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p>先进入<code class="docutils literal notranslate"><span class="pre">BIOS</span></code>设置<code class="docutils literal notranslate"><span class="pre">U</span></code>盘启动优先，进入系统后点击桌面上的安装图标，按照提示进行即可</p>
+<p>这里需要注意的是分区问题，选择手动进行分区</p>
+<p>首先还原之前已分区的空间，注意：保留<code class="docutils literal notranslate"><span class="pre">efi</span></code>分区（<code class="docutils literal notranslate"><span class="pre">windows</span> <span class="pre">boot</span> <span class="pre">manager</span></code>）</p>
+<p>现在只需要分区<code class="docutils literal notranslate"><span class="pre">根目录、交换空间和home目录</span></code>，不再需要设置<code class="docutils literal notranslate"><span class="pre">boot</span></code>空间，最后还需要将选项<code class="docutils literal notranslate"><span class="pre">安装启动引导器的设备</span></code>设置为<code class="docutils literal notranslate"><span class="pre">windows</span> <span class="pre">boot</span> <span class="pre">manager</span></code></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="nvidia">
+<h2><code class="docutils literal notranslate"><span class="pre">Nvidia</span></code>显卡驱动安装<a class="headerlink" href="#nvidia" title="永久链接至标题">¶</a></h2>
+<p>参考：</p>
+<p><a class="reference external" href="https://blog.csdn.net/linhai1028/article/details/79445722">Ubuntu下安装nvidia显卡驱动（安装方式简单）</a></p>
+<p><a class="reference external" href="http://www.cnblogs.com/dreamyphone/p/4508090.html">Linux secure boot(安全启动)时添加Nvidia显卡驱动</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/ksws0292756/article/details/79160742">Ubuntu16.04 安装NVIDIA英伟达驱动教程 及常见几种报错Error的解决方案</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/bush_nj/article/details/80850937">配有 Nvidia 显卡的笔记本安装 ubuntu18.04 所遇到的问题与解决</a></p>
+<div class="section" id="id3">
+<h3>下载<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>查询显卡信息</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ lspci | grep -i nvidia
+
+02:00.0 3D controller: NVIDIA Corporation GM108M [GeForce 940MX] (rev a2)
+</pre></div>
+</div>
+<p>在官网上下载相应驱动：<a class="reference external" href="https://www.nvidia.com/Download/index.aspx">Download Drivers</a></p>
+</div>
+<div class="section" id="id4">
+<h3>预处理<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>禁用<code class="docutils literal notranslate"><span class="pre">Ubuntu</span></code>预先安装的<code class="docutils literal notranslate"><span class="pre">nouveau</span></code>驱动</p>
+<p>编辑文件<code class="docutils literal notranslate"><span class="pre">blacklist.conf</span></code>，添加屏蔽项</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">modprobe</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">blacklist</span><span class="o">.</span><span class="n">conf</span>
+
+<span class="n">blacklist</span> <span class="n">rivafb</span>
+<span class="n">blacklist</span> <span class="n">vga16fb</span>
+<span class="n">blacklist</span> <span class="n">nouveau</span>
+<span class="n">blacklist</span> <span class="n">nvidiafb</span>
+<span class="n">blacklist</span> <span class="n">rivatv</span>
+</pre></div>
+</div>
+<p>卸载之前可能存在的<code class="docutils literal notranslate"><span class="pre">Nvidia</span></code>驱动</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 如果存在</span>
+<span class="n">nvidia</span><span class="o">-</span><span class="n">uninstall</span>
+
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">--</span><span class="n">purge</span> <span class="n">remove</span> <span class="n">nvidia</span><span class="o">-*</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">autoremove</span>
+</pre></div>
+</div>
+<p>给驱动设置权限</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">chmod</span> <span class="n">a</span><span class="o">+</span><span class="n">x</span> <span class="n">NVIDIA</span><span class="o">-</span><span class="n">Linux</span><span class="o">*.</span><span class="n">run</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>安装驱动<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>关闭窗口桌面</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">service</span> <span class="n">lightdm</span> <span class="n">stop</span>
+</pre></div>
+</div>
+<p>切换到命令行桌面<code class="docutils literal notranslate"><span class="pre">Ctrl+Alt+F1</span></code>，执行驱动更新</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">./</span><span class="n">NVIDIA</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mf">410.93</span><span class="o">.</span><span class="n">run</span> <span class="o">-</span><span class="n">no</span><span class="o">-</span><span class="n">x</span><span class="o">-</span><span class="n">check</span> <span class="o">-</span><span class="n">no</span><span class="o">-</span><span class="n">nouveau</span><span class="o">-</span><span class="n">check</span> <span class="o">-</span><span class="n">no</span><span class="o">-</span><span class="n">opengl</span><span class="o">-</span><span class="n">files</span>
+</pre></div>
+</div>
+<p>驱动会显示如下问题</p>
+<p><strong>问题一：the distribution-provided pre-install script failed!</strong></p>
+<p>继续执行</p>
+<p><strong>问题二：<code class="docutils literal notranslate"><span class="pre">dkms</span></code></strong></p>
+<p>选择no</p>
+<p><strong>问题二：<code class="docutils literal notranslate"><span class="pre">sign</span> <span class="pre">the</span> <span class="pre">kernel</span> <span class="pre">module</span></code></strong></p>
+<p>需要签名才能写入，选择签名，并且重新生成，不删除私钥</p>
+<p>安装完成后将密钥写入内核信任列表</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">mokutil</span> <span class="o">--</span><span class="kn">import</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">nvidia</span><span class="o">/</span><span class="n">nvidia</span><span class="o">*.</span><span class="n">der</span>
+</pre></div>
+</div>
+<p>会要求输入两次密码（自定义），然后重启应用</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">reboot</span>
+</pre></div>
+</div>
+<p><strong>问题三：<code class="docutils literal notranslate"><span class="pre">perform</span> <span class="pre">mok</span> <span class="pre">management</span></code></strong></p>
+<p>重启后会进入一个蓝色界面，需要你手动写入签名</p>
+<ol class="simple">
+<li>选择<code class="docutils literal notranslate"><span class="pre">enroll</span> <span class="pre">mok</span></code></li>
+<li>选择<code class="docutils literal notranslate"><span class="pre">continue</span></code></li>
+<li>选择 <code class="docutils literal notranslate"><span class="pre">yes</span></code></li>
+<li>输入之前设置的密码</li>
+<li>选择<code class="docutils literal notranslate"><span class="pre">reboot</span></code></li>
+</ol>
+<p>这样驱动就成功安装了</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>zj@zj-ThinkPad-T470p:~$ nvidia-smi 
+Fri Jan 11 20:57:56 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 410.93       Driver Version: 410.93       CUDA Version: 10.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce 940MX       Off  | 00000000:02:00.0 Off |                  N/A |
+| N/A   33C    P0    N/A /  N/A |      0MiB /  2004MiB |      1%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                            
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="[Ubuntu 16.04]安装cuda和cudnn.html" class="btn btn-neutral float-right" title="[Ubuntu 16.04]安装cuda和cudnn" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="更换国内源.html" class="btn btn-neutral" title="更换国内源" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhujian
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

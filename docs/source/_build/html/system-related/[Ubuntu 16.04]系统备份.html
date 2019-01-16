@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>[Ubuntu 16.04]系统备份 &mdash; linux指南 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="[Ubuntu 16.04]启动器制作" href="[Ubuntu 16.04]启动器制作.html" />
+    <link rel="prev" title="[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡" href="[Thinkpad T470p][Ubuntu 16.04]双显卡配置.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> linux指南
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="更换国内源.html">更换国内源</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.html">[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]安装cuda和cudnn.html">[Ubuntu 16.04]安装cuda和cudnn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Thinkpad T470p][Ubuntu 16.04]双显卡配置.html">[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">[Ubuntu 16.04]系统备份</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#iso">制作<code class="docutils literal notranslate"><span class="pre">ISO</span></code>文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">制作存档文件</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]启动器制作.html">[Ubuntu 16.04]启动器制作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]桌面美化.html">[Ubuntu 16.04]桌面美化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/思维导图xmind.html">Ubuntu16.04 xmind</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]VMware安装.html">[Ubuntu 16.04]VMware安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/[Ubuntu 16.04]清理应用.html">[Ubuntu 16.04]清理应用</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">linux指南</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>[Ubuntu 16.04]系统备份</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/system-related/[Ubuntu 16.04]系统备份.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ubuntu-16-04">
+<h1>[Ubuntu 16.04]系统备份<a class="headerlink" href="#ubuntu-16-04" title="永久链接至标题">¶</a></h1>
+<p>新装了电脑，配置了一大堆东西，备份一下</p>
+<p>有<code class="docutils literal notranslate"><span class="pre">２</span></code>种方式</p>
+<ol class="simple">
+<li>制作<code class="docutils literal notranslate"><span class="pre">ISO</span></code>文件</li>
+<li>制作存档文件</li>
+</ol>
+<hr class="docutils" />
+<div class="section" id="iso">
+<h2>制作<code class="docutils literal notranslate"><span class="pre">ISO</span></code>文件<a class="headerlink" href="#iso" title="永久链接至标题">¶</a></h2>
+<p>参考：<a class="reference external" href="https://blog.csdn.net/u012005313/article/details/82111272#C1">VMWare Ubuntu 扩容</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="id1">
+<h2>制作存档文件<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>参考：</p>
+<p><a class="reference external" href="https://help.ubuntu.com/community/BackupYourSystem/TAR">BackupYourSystem/TAR</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/sinat_27554409/article/details/78227496">Ubuntu全盘备份与恢复，亲自总结，实测可靠</a></p>
+<p><a class="reference external" href="https://www.cnblogs.com/lidonghao/p/3841037.html">Ubuntu如何备份和恢复系统</a></p>
+<p>最简单直接的就是<code class="docutils literal notranslate"><span class="pre">root</span></code>用户执行<code class="docutils literal notranslate"><span class="pre">tar</span></code>命令</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ tar -cvpzf Ubuntu-2019-01-15.tgz　--one-file-system --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys --exclude=/media --exclude=./Ubuntu-2019-01-15.tgz /
+</pre></div>
+</div>
+<p>参数解释</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">-c</span></code>: <code class="docutils literal notranslate"><span class="pre">create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">archive</span></code>(创建一个新的档案文件)</li>
+<li><code class="docutils literal notranslate"><span class="pre">-v</span></code>: <code class="docutils literal notranslate"><span class="pre">verbosely</span> <span class="pre">list</span> <span class="pre">files</span> <span class="pre">processed</span></code>(详细输出)</li>
+<li><code class="docutils literal notranslate"><span class="pre">-p</span></code>: <code class="docutils literal notranslate"><span class="pre">extract</span> <span class="pre">information</span> <span class="pre">about</span> <span class="pre">file</span> <span class="pre">permissions</span></code>(<code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">for</span> <span class="pre">superuser</span></code>)(提取有关文件权限的信息)</li>
+<li><code class="docutils literal notranslate"><span class="pre">-z</span></code>: <code class="docutils literal notranslate"><span class="pre">filter</span> <span class="pre">the</span> <span class="pre">archive</span> <span class="pre">through</span> <span class="pre">gzip</span></code>(使用<code class="docutils literal notranslate"><span class="pre">gzip</span></code>工具进行压缩)</li>
+<li><code class="docutils literal notranslate"><span class="pre">-f</span></code>: <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">archive</span> <span class="pre">file</span> <span class="pre">or</span> <span class="pre">device</span> <span class="pre">ARCHIVE</span></code>(结果文件名)</li>
+<li><code class="docutils literal notranslate"><span class="pre">--one-file-system</span></code>: <code class="docutils literal notranslate"><span class="pre">stay</span> <span class="pre">in</span> <span class="pre">local</span> <span class="pre">file</span> <span class="pre">system</span> <span class="pre">when</span> <span class="pre">creating</span> <span class="pre">archive</span></code>(仅保存本地文件系统)</li>
+<li><code class="docutils literal notranslate"><span class="pre">--exclude</span></code>: <code class="docutils literal notranslate"><span class="pre">exclude</span> <span class="pre">files,</span> <span class="pre">given</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">PATTERN</span></code>(不备份的路径或文件，可使用正则表达式)</li>
+</ul>
+<p>所以结果档案文件为<code class="docutils literal notranslate"><span class="pre">Ubuntu-2019-01-15.tgz</span></code>，不存档的路径和文件包括<code class="docutils literal notranslate"><span class="pre">/proc</span></code>，<code class="docutils literal notranslate"><span class="pre">/lost+found</span></code>，<code class="docutils literal notranslate"><span class="pre">/mnt</span></code>，<code class="docutils literal notranslate"><span class="pre">/sys</span></code>，<code class="docutils literal notranslate"><span class="pre">/media</span></code>,<code class="docutils literal notranslate"><span class="pre">Ubuntu-2019-01-15.tgz</span></code>，存档起始路径为根目录/</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="[Ubuntu 16.04]启动器制作.html" class="btn btn-neutral float-right" title="[Ubuntu 16.04]启动器制作" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="[Thinkpad T470p][Ubuntu 16.04]双显卡配置.html" class="btn btn-neutral" title="[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhujian
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

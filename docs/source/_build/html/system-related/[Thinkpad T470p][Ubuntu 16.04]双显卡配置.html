@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡 &mdash; linux指南 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="[Ubuntu 16.04]系统备份" href="[Ubuntu 16.04]系统备份.html" />
+    <link rel="prev" title="[Ubuntu 16.04]安装cuda和cudnn" href="[Ubuntu 16.04]安装cuda和cudnn.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> linux指南
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="更换国内源.html">更换国内源</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.html">[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]安装cuda和cudnn.html">[Ubuntu 16.04]安装cuda和cudnn</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]系统备份.html">[Ubuntu 16.04]系统备份</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]启动器制作.html">[Ubuntu 16.04]启动器制作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]桌面美化.html">[Ubuntu 16.04]桌面美化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/思维导图xmind.html">Ubuntu16.04 xmind</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]VMware安装.html">[Ubuntu 16.04]VMware安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/[Ubuntu 16.04]清理应用.html">[Ubuntu 16.04]清理应用</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">linux指南</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/system-related/[Thinkpad T470p][Ubuntu 16.04]双显卡配置.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="thinkpad-t470p-ubuntu-16-04">
+<h1>[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡<a class="headerlink" href="#thinkpad-t470p-ubuntu-16-04" title="永久链接至标题">¶</a></h1>
+<p>原本<code class="docutils literal notranslate"><span class="pre">Thinkpad</span> <span class="pre">T470p</span></code>预装的是<code class="docutils literal notranslate"><span class="pre">win10</span></code>家庭版，有双显卡，可以通过<code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">Settings</span></code>进行显卡切换</p>
+<p>现在将系统重装为<code class="docutils literal notranslate"><span class="pre">Ubuntu</span></code>，发现双显卡的配置和想象的不一样</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>zj@zj-ThinkPad-T470p:~$ lspci | grep -i -E &quot;vga|3d&quot;
+
+00:02.0 VGA compatible controller: Intel Corporation Device 591b (rev 04)
+02:00.0 3D controller: NVIDIA Corporation GM108M [GeForce 940MX] (rev a2)
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Intel</span></code>显卡的名称为<code class="docutils literal notranslate"><span class="pre">VGA</span> <span class="pre">compatible</span> <span class="pre">controller</span></code>，而<code class="docutils literal notranslate"><span class="pre">NVIDIA</span></code>显卡的名称为<code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">controller</span></code></p>
+<p>安装<code class="docutils literal notranslate"><span class="pre">NVIDIA</span></code>显卡驱动后，能够运行<code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code>但是不能运行<code class="docutils literal notranslate"><span class="pre">nvidia-settings</span></code>，以及图形应用<code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">X</span> <span class="pre">Server</span> <span class="pre">Settings</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>zj@zj-ThinkPad-T470p:~$ nvidia-smi 
+Mon Jan 14 19:34:28 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 410.93       Driver Version: 410.93       CUDA Version: 10.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce 940MX       Off  | 00000000:02:00.0 Off |                  N/A |
+| N/A   32C    P8    N/A /  N/A |     11MiB /  2004MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                            
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+zj@zj-ThinkPad-T470p:~$ nvidia-settings 
+
+ERROR: Unable to load info from any available system
+</pre></div>
+</div>
+<p>在网上找了许多资料，发现是因为<code class="docutils literal notranslate"><span class="pre">t470p</span></code>使用了<code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">Optimus</span></code>技术，默认在正常使用时基于集显，在玩游戏时基于独显，参考：<a class="reference external" href="https://www.nvidia.cn/object/optimus_technology_cn.html">NVIDIA® Optimus™ 技术</a></p>
+<p>在<code class="docutils literal notranslate"><span class="pre">win10</span></code>环境下还能切换，但在<code class="docutils literal notranslate"><span class="pre">Ubuntu</span></code>环境下无法设置了</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="[Ubuntu 16.04]系统备份.html" class="btn btn-neutral float-right" title="[Ubuntu 16.04]系统备份" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="[Ubuntu 16.04]安装cuda和cudnn.html" class="btn btn-neutral" title="[Ubuntu 16.04]安装cuda和cudnn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhujian
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

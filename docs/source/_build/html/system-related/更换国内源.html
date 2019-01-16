@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>更换国内源 &mdash; linux指南 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装" href="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.html" />
+    <link rel="prev" title="linux指南" href="../index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> linux指南
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">更换国内源</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu16-04">更换Ubuntu16.04</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.html">[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]安装cuda和cudnn.html">[Ubuntu 16.04]安装cuda和cudnn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Thinkpad T470p][Ubuntu 16.04]双显卡配置.html">[Thinkpad T470p][Ubuntu 16.04]双显卡配置问题：无法切换显卡</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]系统备份.html">[Ubuntu 16.04]系统备份</a></li>
+<li class="toctree-l1"><a class="reference internal" href="[Ubuntu 16.04]启动器制作.html">[Ubuntu 16.04]启动器制作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]桌面美化.html">[Ubuntu 16.04]桌面美化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/思维导图xmind.html">Ubuntu16.04 xmind</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/[Ubuntu 16.04]VMware安装.html">[Ubuntu 16.04]VMware安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/[Ubuntu 16.04]清理应用.html">[Ubuntu 16.04]清理应用</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">linux指南</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>更换国内源</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/system-related/更换国内源.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>更换国内源<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>参考：</p>
+<p><a class="reference external" href="https://blog.csdn.net/qq_35451572/article/details/79516563">Ubuntu 更换国内源</a></p>
+<p><a class="reference external" href="https://opsx.alibaba.com/guide?lang=zh-CN&amp;document=69a2341e-801e-11e8-8b5a-00163e04cdbb">ubuntu 18.04 (bionic) 配置 opsx 安装源</a></p>
+<p>可以在阿里官网<a class="reference external" href="https://opsx.alibaba.com/mirror">镜像</a>查找对应系统，点击<code class="docutils literal notranslate"><span class="pre">帮助</span></code>找到更换方法</p>
+<div class="section" id="ubuntu16-04">
+<h2>更换Ubuntu16.04<a class="headerlink" href="#ubuntu16-04" title="永久链接至标题">¶</a></h2>
+<p>备份</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources_init</span><span class="o">.</span><span class="n">list</span>
+</pre></div>
+</div>
+<p>修改</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span>
+</pre></div>
+</div>
+<p>替换为</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span> <span class="n">main</span>
+<span class="n">deb</span><span class="o">-</span><span class="n">src</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span> <span class="n">main</span>
+
+<span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">updates</span> <span class="n">main</span>
+<span class="n">deb</span><span class="o">-</span><span class="n">src</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">updates</span> <span class="n">main</span>
+
+<span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span> <span class="n">universe</span>
+<span class="n">deb</span><span class="o">-</span><span class="n">src</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span> <span class="n">universe</span>
+<span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">updates</span> <span class="n">universe</span>
+<span class="n">deb</span><span class="o">-</span><span class="n">src</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">updates</span> <span class="n">universe</span>
+
+<span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">security</span> <span class="n">main</span>
+<span class="n">deb</span><span class="o">-</span><span class="n">src</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">security</span> <span class="n">main</span>
+<span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">security</span> <span class="n">universe</span>
+<span class="n">deb</span><span class="o">-</span><span class="n">src</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">aliyun</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ubuntu</span><span class="o">/</span> <span class="n">xenial</span><span class="o">-</span><span class="n">security</span> <span class="n">universe</span>
+</pre></div>
+</div>
+<p>更新</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+</pre></div>
+</div>
+<p>修复损坏的软件包，尝试卸载出错的包，重新安装正确版本的</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">-</span><span class="n">f</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>升级软件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">upgrade</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.html" class="btn btn-neutral float-right" title="[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="linux指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhujian
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
