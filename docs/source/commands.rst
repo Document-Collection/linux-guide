@@ -8,3 +8,4 @@
 
    commands/[Ubuntu 16.04]清理应用
    commands/[Ubuntu 16.04]重启文件管理器
+   commands/[Ubuntu 16.04]vim中文乱码

@@ -1,0 +1,119 @@
+
+# [Ubuntu 16.04]云主机中文乱码
+
+参考：
+
+[[经验分享] 关于腾讯云主机中文显示和中文乱码问题](http://bbs.qcloud.com/thread-25524-1-1.html)
+
+[ubuntu16.04中文乱码解决方案](https://blog.csdn.net/qiqiaiairen/article/details/51493822)
+
+[云服务器Ubuntu系统下中文乱码问题解决方案](https://blog.csdn.net/zhoucheng05_13/article/details/53375161)
+
+修改文件`locale`
+    
+    $ cat /etc/default/locale
+    LANG=en_US.utf8
+
+修改为
+
+    LANG=zh_CN.utf8
+
+重启，使用`locale`命令查看是否成功
+
+    $ locale  
+    locale: Cannot set LC_CTYPE to default locale: No such file or directory
+    locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+    locale: Cannot set LC_ALL to default locale: No such file or directory
+    LANG=zh_CN.utf8
+    LANGUAGE=
+    LC_CTYPE="zh_CN.utf8"
+    LC_NUMERIC=zh_CN.UTF-8
+    LC_TIME=zh_CN.UTF-8
+    LC_COLLATE="zh_CN.utf8"
+    LC_MONETARY=zh_CN.UTF-8
+    LC_MESSAGES="zh_CN.utf8"
+    LC_PAPER=zh_CN.UTF-8
+    LC_NAME=zh_CN.UTF-8
+    LC_ADDRESS=zh_CN.UTF-8
+    LC_TELEPHONE=zh_CN.UTF-8
+    LC_MEASUREMENT=zh_CN.UTF-8
+    LC_IDENTIFICATION=zh_CN.UTF-8
+    LC_ALL=
+
+    $ locale -a
+    locale: Cannot set LC_CTYPE to default locale: No such file or directory
+    locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+    locale: Cannot set LC_COLLATE to default locale: No such file or directory
+    C
+    C.UTF-8
+    POSIX
+    en_US
+    en_US.iso88591
+    en_US.utf8
+
+如果缺失中文包，重新安装
+
+    $ sudo locale-gen zh_CN.UTF-8
+    Generating locales (this might take a while)...
+    zh_CN.UTF-8... done
+    Generation complete.
+
+    $ sudo apt-get install language-pack-zh-hans
+    正在读取软件包列表... 完成
+    正在分析软件包的依赖关系树       
+    正在读取状态信息... 完成       
+    将会同时安装下列软件：
+    language-pack-zh-hans-base
+    下列【新】软件包将被安装：
+    language-pack-zh-hans language-pack-zh-hans-base
+    升级了 0 个软件包，新安装了 2 个软件包，要卸载 0 个软件包，有 219 个软件包未被升级。
+    有 1 个软件包没有被完全安装或卸载。
+    需要下载 2,110 kB 的归档。
+    解压缩后会消耗 8,545 kB 的额外空间。
+    您希望继续执行吗？ [Y/n] 
+    获取:1 http://mirrors.tencentyun.com/ubuntu xenial-updates/main amd64 language-pack-zh-hans-base all 1:16.04+20160627 [2,108 kB]
+    获取:2 http://mirrors.tencentyun.com/ubuntu xenial-updates/main amd64 language-pack-zh-hans all 1:16.04+20160627 [1,870 B]
+    已下载 2,110 kB，耗时 0秒 (2,647 kB/s)      
+    正在选中未选择的软件包 language-pack-zh-hans-base。
+    (正在读取数据库 ... 系统当前共安装有 66800 个文件和目录。)
+    正准备解包 .../language-pack-zh-hans-base_1%3a16.04+20160627_all.deb  ...
+    正在解包 language-pack-zh-hans-base (1:16.04+20160627) ...
+    正在选中未选择的软件包 language-pack-zh-hans。
+    正准备解包 .../language-pack-zh-hans_1%3a16.04+20160627_all.deb  ...
+    正在解包 language-pack-zh-hans (1:16.04+20160627) ...
+    正在设置 nginx-core (1.10.3-0ubuntu0.16.04.3) ...
+    正在设置 language-pack-zh-hans (1:16.04+20160627) ...
+    正在设置 language-pack-zh-hans-base (1:16.04+20160627) ...
+    Generating locales (this might take a while)...
+    zh_SG.UTF-8... done
+    Generation complete.
+
+测试
+
+    $ locale -a
+    C
+    C.UTF-8
+    en_US
+    en_US.iso88591
+    en_US.utf8
+    POSIX
+    zh_CN.utf8
+
+    $ locale
+    LANG=zh_CN.utf8
+    LANGUAGE=
+    LC_CTYPE="zh_CN.utf8"
+    LC_NUMERIC=zh_CN.UTF-8
+    LC_TIME=zh_CN.UTF-8
+    LC_COLLATE="zh_CN.utf8"
+    LC_MONETARY=zh_CN.UTF-8
+    LC_MESSAGES="zh_CN.utf8"
+    LC_PAPER=zh_CN.UTF-8
+    LC_NAME=zh_CN.UTF-8
+    LC_ADDRESS=zh_CN.UTF-8
+    LC_TELEPHONE=zh_CN.UTF-8
+    LC_MEASUREMENT=zh_CN.UTF-8
+    LC_IDENTIFICATION=zh_CN.UTF-8
+    LC_ALL=
+
+再次重启即可
