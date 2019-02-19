@@ -1,7 +1,11 @@
 
 # [Ubuntu 16.04]SSH禁用公钥检查
 
-参考：[禁用SSH远程主机的公钥检查](http://www.worldhello.net/2010/04/08/1026.html)
+参考：
+
+[禁用SSH远程主机的公钥检查](http://www.worldhello.net/2010/04/08/1026.html)
+
+[TravisSendToServer](https://github.com/Godi13/TravisSendToServer/blob/master/.travis.yml)
 
 第一次登录服务器时默认进行服务器公钥检查，可通过设置禁止
 
