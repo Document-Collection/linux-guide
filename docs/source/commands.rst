@@ -12,4 +12,4 @@
    commands/[Ubuntu 16.04]SSH远程连接
    commands/[Ubuntu 16.04]SSH禁用公钥检查
    commands/[Ubuntu 16.04]SSH常用工具
-   commands/[Ubuntu 16.04]查看文件、目录、文件系统大小
+   commands/[Ubuntu 16.04]查看文件、目录、系统大小
