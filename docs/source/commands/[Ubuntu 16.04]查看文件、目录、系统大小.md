@@ -39,14 +39,14 @@
     -h, --human-readable
     with -l and/or -s, print human readable sizes (e.g., 1K 234M 2G)
 
-**如果要查看目录下隐藏文件大小，可以增加参数-a**
+**如果要查看目录下隐藏文件大小，可以增加参数`-a`**
 
 参数`-a`表示不忽略隐藏文件（以点号开头）
 
     -a, --all
     do not ignore entries starting with .
 
-### 使用sh命令查看文件、文件夹大小
+### 使用`sh`命令查看文件、文件夹大小
 
 查看当前目录下文件和文件夹大小
 
