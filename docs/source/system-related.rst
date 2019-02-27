@@ -13,3 +13,4 @@
    system-related/[Ubuntu 16.04]系统备份
    system-related/[Ubuntu 16.04]启动器制作
    system-related/[Thinkpad T470p][Ubuntu 16.04]开放热点
+   system-related/[Ubuntu 16.04]查询阻塞进程并杀死
