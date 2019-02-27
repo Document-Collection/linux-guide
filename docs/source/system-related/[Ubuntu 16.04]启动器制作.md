@@ -27,6 +27,8 @@
 
 类型默认为`Application`，输入名字，命令和描述即可新建
 
+**点击图标可以选择启动器图标**
+
 *将该文件放置到`/usr/share/applications`或`~/.local/share/applications`目录下，即可在搜索栏中找到*
 
 ## `desktop`文件解析
