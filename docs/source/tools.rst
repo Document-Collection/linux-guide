@@ -10,3 +10,4 @@
    tools/思维导图xmind
    tools/[Ubuntu 16.04]VMware安装
    tools/[Ubuntu 16.04]Thunderbird邮箱使用
+   tools/[Ubuntu 16.04]CMake安装
