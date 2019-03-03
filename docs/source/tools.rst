@@ -11,3 +11,5 @@
    tools/[Ubuntu 16.04]VMware安装
    tools/[Ubuntu 16.04]Thunderbird邮箱使用
    tools/[Ubuntu 16.04]CMake安装
+   tools/[Ubuntu 16.04]Java安装
+   tools/[Ubuntu 16.04]Apache Ant安装
