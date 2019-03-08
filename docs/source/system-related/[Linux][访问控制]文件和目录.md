@@ -1,43 +1,4 @@
 
-# [Ubuntu 16.04]用户和组
-
-参考：
-
-[Directories and the Set-User-ID and Set-Group-ID Bits](https://www.gnu.org/software/coreutils/manual/html_node/Directory-Setuid-and-Setgid.html)
-
-[Permissions](https://wiki.debian.org/Permissions)
-
-在Linux系统中每次登录均以用户的身份进行操作
-
-每个用户属于一个或多个组，同一组内的用户共享组权限，比如一个文件设置为组可修改，那么属于同一组内的其他用户也可修改该文件
-
-常用命令：
-
-1. stat：显示文件或文件系统状态
-2. ls：列出目录内容
-3. umask：设置文件模式创建掩码
-
-## 查看文件系统的状态
-
-    $ stat /home/zj/
-    File: '/home/zj/'
-    Size: 4096      	Blocks: 8          IO Block: 4096   directory
-    Device: 10304h/66308d	Inode: 17039361    Links: 53
-    Access: (0755/drwxr-xr-x)  Uid: ( 1000/      zj)   Gid: ( 1000/      zj)
-    Access: 2019-02-24 15:43:55.344024704 +0800
-    Modify: 2019-02-24 15:27:08.247767421 +0800
-    Change: 2019-02-24 15:27:08.247767421 +0800
-    Birth: -
-
-    $ stat /
-      File: '/'
-      Size: 4096      	Blocks: 8          IO Block: 4096   directory
-    Device: 10303h/66307d	Inode: 2           Links: 24
-    Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
-    Access: 2019-02-24 15:26:55.191767471 +0800
-    Modify: 2019-01-11 20:55:22.710805402 +0800
-    Change: 2019-01-11 20:55:22.710805402 +0800
-      Birth: -
 
 ## 查看目录列表权限
 
@@ -57,6 +18,7 @@
 接下来9个字符分为3块，分别代表用户、组和其他的权限；每块3个字符，分别代表读、写和执行权限
 
 r表示读；w表示写；x表示执行；-表示没有权限
+
 
 ## 不同数字代表权限信息
 
@@ -83,3 +45,5 @@ r表示读；w表示写；x表示执行；-表示没有权限
 ## 访问权限列表
 
 ACL用于指定用户权限，不论其是否在同一组中
+
+[File permissions and attributes](https://wiki.archlinux.org/index.php/File_permissions_and_attributes)
