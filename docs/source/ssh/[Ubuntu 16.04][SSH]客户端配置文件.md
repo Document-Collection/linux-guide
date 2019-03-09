@@ -14,6 +14,12 @@
 * 用户级(`user-specific file`)：`~/.ssh/config`，通常不存在，如果需要自己新建
 * 系统级(`system-wide file`)：`/etc/ssh/ssh_config`，内置有一些默认配置
 
+## 访问权限
+
+用户配置文件的访问权限设置为用户可读可写，组和其他不能操作
+
+    $ sudo chmod 600 ~/.ssh/config
+
 ## 优先级
 
 参数数据解析顺序如下：
