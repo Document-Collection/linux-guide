@@ -13,5 +13,6 @@ linux指南
    system-related
    tools
    commands
+   ssh
    cvm
    todo
