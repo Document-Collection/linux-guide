@@ -138,3 +138,29 @@
     $ ssh-keygen -F 132.232.142.219
     # Host 132.232.142.219 found: line 10 
     |1|pi+zsVaxd0uefX2luX9dfHymHok=|HIEJX3xNsPOqV31fvg3nIfRkfmE= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItb...
+
+当服务器重装后，会生成新的服务器公钥，需要删除客户端当前公钥然后重新设置
+
+    # 错误消息
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+    Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+    It is also possible that a host key has just been changed.
+    The fingerprint for the ECDSA key sent by the remote host is
+    SHA256:8eHlAUPZtTc6WT+dXP4RHYw7fO8hO4lpzOH89hPUOR8.
+    Please contact your system administrator.
+    Add correct host key in /home/zj/.ssh/known_hosts to get rid of this message.
+    Offending ECDSA key in /home/zj/.ssh/known_hosts:10
+    remove with:
+    ssh-keygen -f "/home/zj/.ssh/known_hosts" -R 132.232.142.219
+    ECDSA host key for 132.232.142.219 has changed and you have requested strict checking.
+    Host key verification failed.
+
+删除本地存储公钥
+
+    $ ssh-keygen -f "/home/zj/.ssh/known_hosts" -R 132.232.142.219
+    # Host 132.232.142.219 found: line 10
+    /home/zj/.ssh/known_hosts updated.
+    Original contents retained as /home/zj/.ssh/known_hosts.old
