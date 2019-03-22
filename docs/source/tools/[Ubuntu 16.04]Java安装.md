@@ -1,7 +1,15 @@
 
 # [Ubuntu 16.04]Java安装
 
-下载[Java Linux](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+## 下载
+
+官网地址：[Java Linux](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+### wget下载
+
+直接复制下载地址然后使用wget下载会出错，参考：[如何用wget下载jdk](https://blog.csdn.net/lwgkzl/article/details/79889983)
+
+    wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" + 右键复制的链接
 
 ## 设置环境变量
 
