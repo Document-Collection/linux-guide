@@ -20,9 +20,9 @@
     $ sudo vim /etc/profile
     # JAVA
     export JAVA_HOME=/home/zj/software/java/jdk1.8.0_201
+    export JRE_HOME=$JAVA_HOME/jre
     export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
     export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
-    export JRE_HOME=$JAVA_HOME/jre
 
 重启即可
 
