@@ -13,6 +13,8 @@
 
     sudo apt-get remove --purge app-name
     sudo apt-get autoremove
+    # 或者
+    $ sudo dpkg -r xxx
 
 比如删除亚马逊应用
 
