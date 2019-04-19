@@ -88,3 +88,12 @@
     $ cat /etc/ssh/sshd_config  | grep MaxAuth
     #MaxAuthTries 6
 
+## 配置
+
+比如修改`ssh`服务端配置文件`/etc/ssh/sshd_config`，设置认证次数为`100`次，然后重启服务端即可
+
+```
+$ sudo vim /etc/ssh/sshd_config
+MaxAuthTries 100
+$ service sshd restart
+```
