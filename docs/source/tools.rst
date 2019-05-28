@@ -14,3 +14,4 @@
    tools/[Ubuntu 16.04]Java安装
    tools/[Ubuntu 16.04]Apache Ant安装
    tools/[Ubuntu 16.04]扩展命令行窗口滚动行数
+   tools/[Ubuntu 16.04]重启输入法
