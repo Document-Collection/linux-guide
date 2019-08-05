@@ -15,3 +15,4 @@
    commands/[Ubuntu 16.04][zip]解压缩文件和目录
    commands/[Ubuntu 16.04]创建文件、文件夹
    commands/[grep]文本搜索
+   commands/[Ubuntu 16.04][sshfs]挂载远程文件系统
