@@ -17,3 +17,4 @@
    commands/[grep]文本搜索
    commands/[Ubuntu 16.04][sshfs]挂载远程文件系统
    commands/[Ubuntu 16.04][tee]数据写入和输出
+   commands/[Ubuntu 16.04][nslookup]域名解析
