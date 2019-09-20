@@ -10,9 +10,8 @@ linux指南
    :maxdepth: 2
    :caption: 目录:
 
-   system-related
    tools
-   commands
+   configure
    ssh
    cvm
    todo
