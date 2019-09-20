@@ -1,5 +1,5 @@
 
-ssh
+SSH
 =====
 
 .. toctree::
