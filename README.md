@@ -15,6 +15,7 @@
 ## 内容列表
 
 - [背景](#背景)
+- [安装](#安装)
 - [用法](#用法)
 - [主要维护人员](#主要维护人员)
 - [参与贡献方式](#参与贡献方式)
@@ -24,9 +25,29 @@
 
 `Linux`系统使用应该说是程序员必备的基础知识，不过这里面涉及了很大的范围。在使用过程中陆陆续续会碰到不懂的概念或工具，记录下来，以备后续查询
 
+# 安装
+
+需要预先安装以下工具：
+
+```
+$ pip install -U Sphinx
+$ sudo apt-get install make
+```
+
 ## 用法
 
-参考[linux指南](https://zj-linux-guide.readthedocs.io/zh_CN/latest/?badge=latest)教程
+有两种使用方式
+
+1. 在线浏览文档：[linux指南](https://zj-linux-guide.readthedocs.io/zh_CN/latest/?badge=latest)
+
+2. 本地生成文档，实现如下：
+
+    ```
+    $ git clone https://github.com/zjZSTU/linux-guide.git
+    $ cd linux-guide/docs
+    $ make html
+    ```
+    编译完成后进入`docs/build/html`目录，打开`index.html`文件
 
 ## 主要维护人员
 
