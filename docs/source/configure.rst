@@ -21,3 +21,4 @@
    configure/[Ubuntu 16.04]vim中文乱码
    configure/[Ubuntu 16.04]Thunderbird邮箱使用
    configure/[Ubuntu 16.04]扩展命令行窗口滚动行数
+   configure/[SHELL]命令行窗口假死
