@@ -7,7 +7,7 @@
    :caption: 目录:
 
    configure/[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
-   configure/更换国内源
+   configure/[Ali mirror]]更换国内源
    configure/[Linux][访问控制]分区和文件系统
    configure/[Linux][访问控制]文件和目录
    configure/[Linux][访问控制]用户,组和其他
@@ -22,3 +22,4 @@
    configure/[Ubuntu 16.04]Thunderbird邮箱使用
    configure/[Ubuntu 16.04]扩展命令行窗口滚动行数
    configure/[SHELL]命令行窗口假死
+   configure/[Ubuntu 18.04]g++安装失败
