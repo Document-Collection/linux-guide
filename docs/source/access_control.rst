@@ -11,3 +11,5 @@
 
    access_control/[Linux]文件权限
    access_control/[Linux]目录权限
+   access_control/[Linux][useradd][userdel][id]用户查询、创建和删除
+   access_control/[Linux]sudo使用

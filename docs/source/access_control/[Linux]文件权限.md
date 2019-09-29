@@ -87,6 +87,34 @@ Change: 2019-09-24 16:03:31.121613208 +0800
  Birth: -
 ```
 
+#### 打印访问权限
+
+```
+$ stat -c %A Dockerfile 
+-rw-r--r--
+$ stat -c %a Dockerfile 
+644
+```
+
+#### 打印所属用户/组
+
+```
+# 组合打印文件所属用户/组
+$ stat -c %U:%G dockerfiles/ 
+zj:zj
+```
+
+#### 打印文件类型
+
+```
+# 文件
+$ stat -c %F Dockerfile 
+regular file
+# 目录
+$ stat -c %F dockerfiles/ 
+directory
+```
+
 ## 设置工具
 
 针对`Linux`的`2`级访问控制，使用`chmod`修改文件的读/写/执行权限，使用`chown/chgrp`修改文件的用户/组/其他权限
