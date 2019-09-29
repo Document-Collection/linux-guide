@@ -13,3 +13,4 @@
    access_control/[Linux]目录权限
    access_control/[Linux][useradd][userdel][id]用户查询、创建和删除
    access_control/[Linux]sudo使用
+   access_control/[Linux][usermod][passwd]用户权限调整

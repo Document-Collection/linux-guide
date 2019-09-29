@@ -1,7 +1,13 @@
 
 # [Linux]sudo使用
 
-参考：[Sudo](https://wiki.archlinux.org/index.php/Sudo)
+参考：
+
+[Sudo](https://wiki.archlinux.org/index.php/Sudo)
+
+[linux sudo 与 /etc/sudoer的配置](https://zhuanlan.zhihu.com/p/43934300)
+
+[Linux 系统中 sudo 命令的 10 个技巧](https://zhuanlan.zhihu.com/p/36037822)
 
 `sudo`允许系统管理员授予某些用户或用户组以根用户或其他用户身份运行命令的权限，同时提供对命令及其参数的审核跟踪
 
