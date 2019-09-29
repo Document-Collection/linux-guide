@@ -189,7 +189,7 @@ mode of 'Dockerfile' changed from 0676 (rw-rwxrw-) to 0644 (rw-r--r--)
 
 ### chown/chgrp
 
-* `chmod`修改当前文件所属的用户
+* `chowd`修改当前文件所属的用户
 * `chgrp`修改当前文件所属的组
 
 #### chown
