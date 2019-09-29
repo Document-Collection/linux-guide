@@ -12,6 +12,7 @@ linux指南
 
    tools
    configure
+   access_control
    ssh
    cvm
    todo
