@@ -69,6 +69,13 @@ $ useradd USER
 $ useradd -m USER
 ```
 
+指定初始组，使用组名或组`ID`（注意：该初始组必须已存在）
+
+```
+# -g, --gid
+$ useradd -g GNAME USER
+```
+
 ### 登录shell
 
 指定登录`shell`
