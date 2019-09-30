@@ -25,4 +25,4 @@
    tools/[Ubuntu 16.04][tee]数据写入和输出
    tools/[Ubuntu 16.04][nslookup]域名解析
    tools/[Ubuntu 16.04]安装cuda和cudnn
-   tools/[Ubuntu 16.04]设置文件、目录权限
+   tools/[Ubuntu 18.02]ifconfig安装
