@@ -15,3 +15,4 @@
    access_control/[Linux]sudo使用
    access_control/[Linux][usermod][passwd]用户权限调整
    access_control/[Linux][groupadd][groupdel][groups]组查询、创建和删除
+   access_control/[Linux][groupmod][gpasswd]组权限调整
