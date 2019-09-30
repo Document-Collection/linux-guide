@@ -17,3 +17,4 @@
    access_control/[Linux][groupadd][groupdel][groups]组查询、创建和删除
    access_control/[Linux][groupmod][gpasswd]组权限调整
    access_control/[Linux][etc-passwd]本地用户信息
+   access_control/[Linux][/etc/shadow]用户密码
