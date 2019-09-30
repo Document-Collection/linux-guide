@@ -1,5 +1,7 @@
 
-# [Linux][etc-group]本地组信息
+# [Linux][/etc/group]本地组信息
+
+参考：[Understanding /etc/group File](https://www.cyberciti.biz/faq/understanding-etcgroup-file/)
 
 本地组信息保存在`/etc/group`中，其包含`4`个字段
 
