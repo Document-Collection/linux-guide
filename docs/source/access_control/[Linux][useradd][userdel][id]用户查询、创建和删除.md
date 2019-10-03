@@ -76,6 +76,21 @@ $ useradd -m USER
 $ useradd -g GNAME USER
 ```
 
+指定用户`ID`
+
+```
+# -u, --uid
+$ useraddd -u UID USER
+# 使用参数`-o`表明可以指定已存在的UID
+$ useradd -o -u UID USER
+```
+
+添加额外信息，添加的信息将出现在`/etc/passwd`文件每行的`GECOS`字段
+
+```
+$ useradd -c "COMMENT" USER
+```
+
 ### 登录shell
 
 指定登录`shell`
