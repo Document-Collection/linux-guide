@@ -22,8 +22,10 @@ $ usermod -g GROUP USER
 修改用户附属组
 
 ```
-# 以逗号分隔
-$ usermod -G GROUPS USER
+# 以逗号分隔，以先的附属组替换原先用户的附属组
+$ usermod -G NEW_GROUPS USER
+# 使用参数-a保留原先用户的附属组
+$ usermod -a -G NEW_GROUPS USER
 ```
 
 修改用户`ID`
