@@ -21,3 +21,4 @@
    configure/[Ubuntu 16.04]扩展命令行窗口滚动行数
    configure/[SHELL]命令行窗口假死
    configure/[Ubuntu 18.04]g++安装失败
+   configure/[Linux][locale]字符集设置
