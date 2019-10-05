@@ -35,6 +35,7 @@ Asia/Shanghai
 使用命令`dpkg-reconfigure`进行时区设置
 
 ```
+$ sudo apt-get install tzdata
 $ sudo dpkg-reconfigure tzdata
 ...
 ...
