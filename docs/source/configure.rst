@@ -22,3 +22,4 @@
    configure/[SHELL]命令行窗口假死
    configure/[Ubuntu 18.04]g++安装失败
    configure/[Linux][locale]字符集设置
+   configure/[Ubuntu 18.04][localtime]设置时区
