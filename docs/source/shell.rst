@@ -13,3 +13,4 @@ shell脚本
    shell/基本运算符
    shell/条件表达式
    shell/函数
+   shell/输入和输出重定向
