@@ -14,5 +14,6 @@ linux指南
    configure
    access_control
    ssh
+   shell
    cvm
    todo
