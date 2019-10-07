@@ -10,3 +10,4 @@ shell脚本
    shell/变量
    shell/参数传递
    shell/流程控制
+   shell/基本运算符
