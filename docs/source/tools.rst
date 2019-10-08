@@ -13,7 +13,6 @@
    tools/[Ubuntu 16.04]Java安装
    tools/[Ubuntu 16.04]Apache Ant安装
    tools/[Ubuntu 16.04]重启输入法
-   tools/[Ubuntu 16.04]清理应用
    tools/[Ubuntu 16.04]端口查询 
    tools/[Ubuntu 16.04]重启文件管理器
    tools/[Ubuntu 16.04]查看文件、目录、系统大小
@@ -26,3 +25,4 @@
    tools/[Ubuntu 16.04][nslookup]域名解析
    tools/[Ubuntu 16.04]安装cuda和cudnn
    tools/[Ubuntu 18.02]ifconfig安装
+   tools/[apt-get][apt-cache][dpkg]查询、安装、卸载和清理
