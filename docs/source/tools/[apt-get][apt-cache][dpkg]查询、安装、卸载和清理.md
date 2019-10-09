@@ -39,8 +39,14 @@ apt-cache show package_name
 apt-get install package_name
 ```
 
-* 参数`-y`表示跳过系统提示，直接安装
-* 参数`--fix-missing`表示修复缺失的包
+* `-y, --yes, --assume-yes`：假定每次交互时输入为`yes`
+* `-m, --ignore-missing, --fix-missing`：忽略缺失的包
+* `-f, --fix-broken`：修复作用,试图纠正依赖关系已损坏的系统
+
+```
+# 禁止安装时交互，自动安装
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install [packagename]
+```
 
 ```
 # 更新软件源中的所有软件列表
