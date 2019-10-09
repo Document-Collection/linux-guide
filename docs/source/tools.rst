@@ -24,5 +24,5 @@
    tools/[Ubuntu 16.04][tee]数据写入和输出
    tools/[Ubuntu 16.04][nslookup]域名解析
    tools/[Ubuntu 16.04]安装cuda和cudnn
-   tools/[Ubuntu 18.02]ifconfig安装
+   tools/[Ubuntu 18.02][ifconfig][ip][ping]网络工具安装
    tools/[apt-get][apt-cache][dpkg]查询、安装、卸载和清理
