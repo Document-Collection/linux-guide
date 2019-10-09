@@ -23,3 +23,4 @@
    configure/[Ubuntu 18.04]g++安装失败
    configure/[Linux][locale]字符集设置
    configure/[Ubuntu 18.04][localtime]设置时区
+   configure/[Ubuntu 18.04]中文乱码
