@@ -75,3 +75,15 @@ Tomcat started.
 
 exit 0
 ```
+
+## 非root用户运行
+
+设置`tomcat`以普通用户运行，网上找了很多资料
+
+[用非root用户启动tomcat进程](https://rorschachchan.github.io/2018/04/18/%E4%BD%BF%E7%94%A8%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%90%AF%E5%8A%A8tomcat/)
+
+[How To Install Apache Tomcat 8 on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04)
+
+[Tomcat用普通用户身份运行](http://www.zhengdazhi.com/archives/1382)
+
+最实在的是[ubuntu非root用户启动tomcat权限问题](https://blog.csdn.net/qq_26012495/article/details/86220563)，直接将`tomcat`文件夹设置为当前用户，然后启动`tomcat`即可
