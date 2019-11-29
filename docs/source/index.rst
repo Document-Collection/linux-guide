@@ -13,7 +13,6 @@ linux指南
    tools
    configure
    access_control
-   environment
    ssh
    shell
    cvm
