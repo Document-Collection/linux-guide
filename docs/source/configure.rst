@@ -6,6 +6,7 @@
    :maxdepth: 2
    :caption: 目录:
 
+   configure/[Thinkpad T470p][Ubuntu 18.04]PPA方式安装Nvidia驱动
    configure/[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装
    configure/[Ali mirror]]更换国内源
    configure/[Linux][访问控制]分区和文件系统
