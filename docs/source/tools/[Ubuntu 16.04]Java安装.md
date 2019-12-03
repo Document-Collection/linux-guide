@@ -34,15 +34,21 @@
 
 首先添加`SunJDK`命令到`update-alternatives`
 
-    $ sudo update-alternatives --install /usr/bin/java java /home/zj/software/java/jdk1.8.0_201/bin/java 300
-    zj@zj-ThinkPad-T470p:~/software/java/jdk1.8.0_201$ sudo update-alternatives --install /usr/bin/javac javac /home/zj/software/java/jdk1.8.0_201/bin/javac 300
-    update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/javac to provide /usr/bin/javac (javac) in auto mode
-    zj@zj-ThinkPad-T470p:~/software/java/jdk1.8.0_201$ sudo update-alternatives --install /usr/bin/jar jar /home/zj/software/java/jdk1.8.0_201/bin/jar 300
-    update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/jar to provide /usr/bin/jar (jar) in auto mode
-    zj@zj-ThinkPad-T470p:~/software/java/jdk1.8.0_201$ sudo update-alternatives --install /usr/bin/javah javah /home/zj/software/java/jdk1.8.0_201/bin/javah 300
-    update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/javah to provide /usr/bin/javah (javah) in auto mode
-    zj@zj-ThinkPad-T470p:~/software/java/jdk1.8.0_201$ sudo update-alternatives --install /usr/bin/javp javap /home/zj/software/java/jdk1.8.0_201/bin/javap 300
-    update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/javap to provide /usr/bin/javp (javap) in auto mode
+```
+$ sudo update-alternatives --install /usr/bin/java java /home/zj/software/java/jdk1.8.0_201/bin/java 300
+
+$ sudo update-alternatives --install /usr/bin/javac javac /home/zj/software/java/jdk1.8.0_201/bin/javac 300
+update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/javac to provide /usr/bin/javac (javac) in auto mode
+
+$ sudo update-alternatives --install /usr/bin/jar jar /home/zj/software/java/jdk1.8.0_201/bin/jar 300
+update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/jar to provide /usr/bin/jar (jar) in auto mode
+
+$ sudo update-alternatives --install /usr/bin/javah javah /home/zj/software/java/jdk1.8.0_201/bin/javah 300
+update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/javah to provide /usr/bin/javah (javah) in auto mode
+
+$ sudo update-alternatives --install /usr/bin/javp javap /home/zj/software/java/jdk1.8.0_201/bin/javap 300
+update-alternatives: using /home/zj/software/java/jdk1.8.0_201/bin/javap to provide /usr/bin/javp (javap) in auto mode
+```
 
 添加了`java/javac/jar/javah/javap`,有些是系统没有配置的,比如`javac/jar/javah/javap`,有些是系统已有配置的,比如`java`
 
