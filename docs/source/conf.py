@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'git-guide'
+project = 'linux-guide'
 copyright = '2019, zhujian'
 author = 'zhujian'
 
