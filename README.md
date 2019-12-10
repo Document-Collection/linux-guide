@@ -14,6 +14,10 @@
 5. `SHELL`脚本编程
 6. 云服务器配置
 
+当前操作系统：`Ubuntu 18.04`
+
+`Ubuntu 16.04`相关文档保存在版本[v0.1.0](https://github.com/zjZSTU/linux-guide/releases/tag/v0.1.0)中
+
 ## 内容列表
 
 - [背景](#背景)
