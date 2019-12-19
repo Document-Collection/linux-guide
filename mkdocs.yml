@@ -1,0 +1,108 @@
+# 站点名称
+site_name: 'Linux Guide'
+# 仓库链接
+repo_url: https://github.com/zjZSTU/linux-guide.git
+# 作者
+site_author: 'zhujian'
+# 版权信息
+copyright: '2019, zhujian'
+# 源文件目录
+docs_dir: 'docs'
+# 生成静态文件目录
+site_dir: 'site'
+# 额外信息
+extra:
+    # 版本号
+    version: 2.0.0
+# 主题
+theme: 
+    # name: 'readthedocs'
+    # name: 'mkdocs'
+    name: 'material'
+# markdown扩展
+markdown_extensions:
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+# 导航
+nav:
+    - Home: index.md
+    - 工具安装和配置:
+        - '[Ali mirror]]更换国内源': './tool-install-configure/[Ali mirror]]更换国内源.md'
+        - 'CMake安装': './tool-install-configure/CMake安装.md'
+        - 'Java安装': './tool-install-configure/Java安装.md'
+        - 'Apache Ant安装': './tool-install-configure/Apache Ant安装.md'
+
+        - '[Ubuntu]DEBIAN_FRONTEND': './tool-install-configure/[Ubuntu]DEBIAN_FRONTEND.md'
+        - '[LOCALE]字符集设置': './tool-install-configure/[LOCALE]字符集设置.md'
+        - '扩展命令行窗口滚动行数': './tool-install-configure/扩展命令行窗口滚动行数.md'
+        - 'Network service discovery disabled': './tool-install-configure/Network service discovery disabled.md'
+        - '[VIM]中文乱码': './tool-install-configure/[VIM]中文乱码.md'
+        - '[localtime]设置时区': './tool-install-configure/[localtime]设置时区.md'
+        - '[Ubuntu]中文乱码': './tool-install-configure/[Ubuntu]中文乱码.md'
+
+        - 'Ubuntu 16.04相关':
+            - '[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装': './tool-install-configure/[Thinkpad T470p]安装Ubuntu 16.04单系统及Nvidia显卡驱动安装.md'
+            - '[Thinkpad T470p][Ubuntu 16.04]双显卡配置': './tool-install-configure/[Thinkpad T470p][Ubuntu 16.04]双显卡配置.md'
+            - '[Ubuntu 16.04]Cuda和Cudnn安装': './tool-install-configure/[Ubuntu 16.04]Cuda和Cudnn安装.md'
+            - '[Ubuntu 16.04]桌面美化': './tool-install-configure/[Ubuntu 16.04]桌面美化.md'
+            - '[Ubuntu 16.04]VMware安装': './tool-install-configure/[Ubuntu 16.04]VMware安装.md'
+            - '[Ubuntu 16.04]开放热点': './tool-install-configure/[Ubuntu 16.04]开放热点.md'
+            - '[Ubuntu 16.04]Thunderbird邮箱配置': './tool-install-configure/[Ubuntu 16.04]Thunderbird邮箱配置.md'
+
+        - 'Ubuntu 18.04相关':
+            - '[Docker][Ubuntu 18.04]网络工具安装': './tool-install-configure/[Docker][Ubuntu 18.04]网络工具安装.md'
+            - '[Ubuntu 18.04]PPA方式安装Nvidia驱动': './tool-install-configure/[Ubuntu 18.04]PPA方式安装Nvidia驱动.md'
+            - '[Ubuntu 18.04]桌面美化': './tool-install-configure/[Ubuntu 18.04]桌面美化.md'
+            - '[Ubuntu 18.04]VMware安装': './tool-install-configure/[Ubuntu 18.04]VMware安装.md'
+            - '[Docker][Ubuntu 18.04]g++安装失败': './tool-install-configure/[Docker][Ubuntu 18.04]g++安装失败.md'
+
+    - 工具使用:
+        - '[grep]文本搜索': './tool-use/[grep]文本搜索.md'
+        - '[SHELL]命令行窗口假死': './tool-use/[SHELL]命令行窗口假死.md'
+        - '[nslookup]域名解析': './tool-use/[nslookup]域名解析.md'
+        - '[sshfs]挂载远程文件系统': './tool-use/[sshfs]挂载远程文件系统.md'
+        - '[tar]解压缩文件和目录': './tool-use/[tar]解压缩文件和目录.md'
+        - '[tee]数据写入和输出': './tool-use/[tee]数据写入和输出.md'
+        - '[zip]解压缩文件和目录': './tool-use/[zip]解压缩文件和目录.md'
+        - '查看文件、目录、文件系统大小': './tool-use/查看文件、目录、文件系统大小.md'
+        - '创建文件、文件夹': './tool-use/创建文件、文件夹.md'
+        - '[netstat]端口查询': './tool-use/[netstat]端口查询.md'
+        - '桌面启动器制作': './tool-use/桌面启动器制作.md'
+        - '[fcitx]重启输入法': './tool-use/[fcitx]重启输入法.md'
+        - '[nautilus]重启文件管理器': './tool-use/[nautilus]重启文件管理器.md'
+
+        - '[apt-get][apt-cache][dpkg]查询、安装、卸载和清理': './tool-use/[apt-get][apt-cache][dpkg]查询、安装、卸载和清理.md'
+        - '查询阻塞进程并杀死': './tool-use/查询阻塞进程并杀死.md'
+        - '删除陈旧的APT仓库': './tool-use/删除陈旧的APT仓库.md'
+        - '[Linux][访问控制]分区和文件系统': './tool-use/[Linux][访问控制]分区和文件系统.md'
+        - '系统备份': './tool-use/系统备份.md'
+    - 访问控制:
+        - '[Linux]文件权限.md': './access_control/[Linux]文件权限.md'
+        - '[Linux]目录权限.md': './access_control/[Linux]目录权限.md'
+        - '[Linux][useradd][userdel][id]用户查询、创建和删除.md': './access_control/[Linux][useradd][userdel][id]用户查询、创建和删除.md'
+        - '[Linux]sudo使用.md': './access_control/[Linux]sudo使用.md'
+        - '[Linux][usermod][passwd]用户权限调整.md': './access_control/[Linux][usermod][passwd]用户权限调整.md'
+        - '[Linux][groupadd][groupdel][groups]组查询、创建和删除.md': './access_control/[Linux][groupadd][groupdel][groups]组查询、创建和删除.md'
+        - '[Linux][groupmod][gpasswd]组权限调整.md': './access_control/[Linux][groupmod][gpasswd]组权限调整.md'
+        - '[Linux][etc-passwd]本地用户信息.md': './access_control/[Linux][etc-passwd]本地用户信息.md'
+        - '[Linux][etc-shadow]用户密码.md': './access_control/[Linux][etc-shadow]用户密码.md'
+        - '[Linux][etc-group]本地组信息.md': './access_control/[Linux][etc-group]本地组信息.md'
+    - 脚本编程:
+        - 'dash和bash': './shell/dash和bash.md'
+        - 'set': './shell/set.md'
+        - '变量': './shell/变量.md'
+        - '参数传递': './shell/参数传递.md'
+        - '流程控制': './shell/流程控制.md'
+        - '基本运算符': './shell/基本运算符.md'
+        - '条件表达式': './shell/条件表达式.md'
+        - '函数': './shell/函数.md'
+        - '输入和输出重定向': './shell/输入和输出重定向.md'
+        - '字符串': './shell/字符串.md'
+    - 服务器:
+        - '腾讯云服务器': './cvm/腾讯云服务器.md'
+        - '[腾讯云]服务器登录': './cvm/[腾讯云]服务器登录.md'
+        - '[腾讯云]主机中文乱码': './cvm/[腾讯云]主机中文乱码.md'
