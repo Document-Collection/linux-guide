@@ -5,18 +5,7 @@
 
 > Linux使用指南
 
-学习并使用`Linux`工具、相关配置以及对应基础知识。当前分为以下几部分：
-
-1. 工具安装及使用
-2. 工具及系统配置
-3. 用户权限配置
-4. `SSH`配置
-5. `SHELL`脚本编程
-6. 云服务器配置
-
-当前操作系统：`Ubuntu 18.04`
-
-`Ubuntu 16.04`相关文档保存在版本[v0.1.0](https://github.com/zjZSTU/linux-guide/releases/tag/v0.1.0)中
+学习`Linux`系统，包括系统配置、工具、脚本以及相关的服务器开发
 
 ## 内容列表
 
@@ -36,8 +25,7 @@
 需要预先安装以下工具：
 
 ```
-$ pip install -U Sphinx
-$ sudo apt-get install make
+$ pip install mkdocs
 ```
 
 ## 用法
@@ -50,10 +38,10 @@ $ sudo apt-get install make
 
     ```
     $ git clone https://github.com/zjZSTU/linux-guide.git
-    $ cd linux-guide/docs
-    $ make html
+    $ cd Containerization-Automation
+    $ mkdocs serve
     ```
-    编译完成后进入`docs/build/html`目录，打开`index.html`文件
+   启动本地服务器后即可登录浏览器`localhost:8000`
 
 ## 主要维护人员
 
