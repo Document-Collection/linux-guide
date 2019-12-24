@@ -7,7 +7,7 @@
 
 [ubuntu 18.04 (bionic) 配置 opsx 安装源](https://opsx.alibaba.com/guide?lang=zh-CN&document=69a2341e-801e-11e8-8b5a-00163e04cdbb)
 
-可以在阿里官网[镜像](https://opsx.alibaba.com/mirror)查找对应系统，点击`帮助`找到更换方法
+可以在阿里官网[镜像](https://developer.aliyun.com/mirror)查找对应系统，点击`帮助`找到更换方法
 
 ## 更换Ubuntu16.04
 
