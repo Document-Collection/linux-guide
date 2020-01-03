@@ -71,6 +71,7 @@ nav:
         - '查看文件、目录、文件系统大小': './tool-use/查看文件、目录、文件系统大小.md'
         - '创建文件、文件夹': './tool-use/创建文件、文件夹.md'
         - '[netstat]端口查询': './tool-use/[netstat]端口查询.md'
+        - '[nc]远程端口查询': './tool-use/[nc]远程端口查询.md'
         - '桌面启动器制作': './tool-use/桌面启动器制作.md'
         - '[fcitx]重启输入法': './tool-use/[fcitx]重启输入法.md'
         - '[nautilus]重启文件管理器': './tool-use/[nautilus]重启文件管理器.md'
