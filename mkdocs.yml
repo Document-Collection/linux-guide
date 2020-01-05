@@ -35,6 +35,7 @@ nav:
         - 'CMake安装': './tool-install-configure/CMake安装.md'
         - 'Java安装': './tool-install-configure/Java安装.md'
         - 'Apache Ant安装': './tool-install-configure/Apache Ant安装.md'
+        - '[Indicator Stickynotes]桌面便签': './tool-install-configure/[Indicator Stickynotes]桌面便签.md'
 
         - '[Ubuntu]DEBIAN_FRONTEND': './tool-install-configure/[Ubuntu]DEBIAN_FRONTEND.md'
         - '[LOCALE]字符集设置': './tool-install-configure/[LOCALE]字符集设置.md'
