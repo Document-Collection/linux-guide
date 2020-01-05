@@ -79,6 +79,7 @@ nav:
         - '[apt-get][apt-cache][dpkg]查询、安装、卸载和清理': './tool-use/[apt-get][apt-cache][dpkg]查询、安装、卸载和清理.md'
         - '查询阻塞进程并杀死': './tool-use/查询阻塞进程并杀死.md'
         - '删除陈旧的APT仓库': './tool-use/删除陈旧的APT仓库.md'
+        - '[apt]升级操作': './tool-use/[apt]升级操作.md'
         - '[Linux][访问控制]分区和文件系统': './tool-use/[Linux][访问控制]分区和文件系统.md'
         - '系统备份': './tool-use/系统备份.md'
     - 访问控制:
