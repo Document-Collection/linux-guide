@@ -83,6 +83,7 @@ nav:
         - '[apt]升级操作': './tool-use/[apt]升级操作.md'
         - '[Linux][访问控制]分区和文件系统': './tool-use/[Linux][访问控制]分区和文件系统.md'
         - '系统备份': './tool-use/系统备份.md'
+        - '[cp]复制目录下排除某个文件或文件夹外的所有文件': './tool-use/[cp]复制目录下排除某个文件或文件夹外的所有文件.md'
     - 访问控制:
         - '[Linux]文件权限.md': './access_control/[Linux]文件权限.md'
         - '[Linux]目录权限.md': './access_control/[Linux]目录权限.md'
