@@ -55,7 +55,6 @@ nav:
             - '[Ubuntu 16.04]Thunderbird邮箱配置': './tool-install-configure/[Ubuntu 16.04]Thunderbird邮箱配置.md'
 
         - 'Ubuntu 18.04相关':
-            - '[Docker][Ubuntu 18.04]网络工具安装': './tool-install-configure/[Docker][Ubuntu 18.04]网络工具安装.md'
             - '[Ubuntu 18.04]PPA方式安装Nvidia驱动': './tool-install-configure/[Ubuntu 18.04]PPA方式安装Nvidia驱动.md'
             - '[Ubuntu 18.04]桌面美化': './tool-install-configure/[Ubuntu 18.04]桌面美化.md'
             - '[Ubuntu 18.04]VMware安装': './tool-install-configure/[Ubuntu 18.04]VMware安装.md'
@@ -64,15 +63,12 @@ nav:
     - 工具使用:
         - '[grep]文本搜索': './tool-use/[grep]文本搜索.md'
         - '[SHELL]命令行窗口假死': './tool-use/[SHELL]命令行窗口假死.md'
-        - '[nslookup]域名解析': './tool-use/[nslookup]域名解析.md'
         - '[sshfs]挂载远程文件系统': './tool-use/[sshfs]挂载远程文件系统.md'
         - '[tar]解压缩文件和目录': './tool-use/[tar]解压缩文件和目录.md'
         - '[tee]数据写入和输出': './tool-use/[tee]数据写入和输出.md'
         - '[zip]解压缩文件和目录': './tool-use/[zip]解压缩文件和目录.md'
         - '查看文件、目录、文件系统大小': './tool-use/查看文件、目录、文件系统大小.md'
         - '创建文件、文件夹': './tool-use/创建文件、文件夹.md'
-        - '[netstat]端口查询': './tool-use/[netstat]端口查询.md'
-        - '[nc]远程端口查询': './tool-use/[nc]远程端口查询.md'
         - '桌面启动器制作': './tool-use/桌面启动器制作.md'
         - '[fcitx]重启输入法': './tool-use/[fcitx]重启输入法.md'
         - '[nautilus]重启文件管理器': './tool-use/[nautilus]重启文件管理器.md'
