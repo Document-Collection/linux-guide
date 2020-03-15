@@ -38,7 +38,18 @@
 
 ## 解压
 
+### .tar.gz
+
     # 解压到当前文件夹
     $ tar -zxvf file.tar.gz
     # 解压到指定文件夹，注意：des已存在
     $ tar -zxvf file.tar.gz -C des
+
+### .tar.xz
+
+```
+# 解压.xz文件
+$ xz -d xxx.tar.xz
+# 解压.tar文件
+$ tar -xvf xxx.tar
+```
