@@ -12,3 +12,4 @@
 相关文档:
 
 * [[ubuntu 18.04]重装系统小结](https://blog.zhujian.life/posts/e70eeac0.html)
+* [[Ubuntu]目录树](https://blog.zhujian.life/posts/8bc9b2b7.html)
