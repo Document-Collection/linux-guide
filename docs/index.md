@@ -11,4 +11,4 @@
 
 相关文档:
 
-* [[ubuntu 18.04]重装系统小结](https://www.zhujian.tech/posts/e70eeac0.html)
+* [[ubuntu 18.04]重装系统小结](https://blog.zhujian.life/posts/e70eeac0.html)
