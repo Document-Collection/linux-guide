@@ -84,6 +84,7 @@ nav:
         - '系统备份': './tool-use/系统备份.md'
         - '[cp]复制目录下排除某个文件或文件夹外的所有文件': './tool-use/[cp]复制目录下排除某个文件或文件夹外的所有文件.md'
         - '[ln]软链接和硬链接': './tool-use/[ln]软链接和硬链接.md'
+        - '[free]内存容量查询': './tool-use/[free]内存容量查询.md'
     - 访问控制:
         - '[Linux]文件权限.md': './access_control/[Linux]文件权限.md'
         - '[Linux]目录权限.md': './access_control/[Linux]目录权限.md'
