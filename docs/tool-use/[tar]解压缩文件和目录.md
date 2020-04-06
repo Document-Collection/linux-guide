@@ -53,3 +53,9 @@ $ xz -d xxx.tar.xz
 # 解压.tar文件
 $ tar -xvf xxx.tar
 ```
+
+## .tar
+
+```
+$ tar -xvf xxx.tar
+```
