@@ -57,3 +57,21 @@ Installation was successful.
 ```
 $ sudo vmware-installer --uninstall-product vmware-workstation
 ```
+
+## 服务设置
+
+安装完`VMWare`之后，默认开启了`3`个服务
+
+```
+vmware.service                     vmware-workstation-server.service
+vmware-USBArbitrator.service 
+```
+
+禁止`VMWare`相关服务自启动
+
+```
+# 禁止开机自启动
+$ sudo systemctl disable xxx
+# 停止服务
+$ sudo systemctl stop xxx
+```
