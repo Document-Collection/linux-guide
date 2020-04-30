@@ -65,6 +65,7 @@ nav:
             - '[grep]文本搜索': './tool-use/[grep]文本搜索.md'
             - '[sed]文本替换': './tool-use/[sed]文本替换.md'
             - '[grep][sed]替换目录下所有符合条件的内容': './tool-use/[grep][sed]替换目录下所有符合条件的内容.md'
+        - '[alias]命令别名设置': './tool-use/[alias]命令别名设置.md'
         - '[SHELL]命令行窗口假死': './tool-use/[SHELL]命令行窗口假死.md'
         - '[sshfs]挂载远程文件系统': './tool-use/[sshfs]挂载远程文件系统.md'
         - '[tar]解压缩文件和目录': './tool-use/[tar]解压缩文件和目录.md'
