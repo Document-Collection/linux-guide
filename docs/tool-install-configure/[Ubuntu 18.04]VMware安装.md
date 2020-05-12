@@ -75,3 +75,10 @@ $ sudo systemctl disable xxx
 # 停止服务
 $ sudo systemctl stop xxx
 ```
+
+## could not open /dev/vmmon:????????
+
+打开`vmware`时会出现`could not open /dev/vmmon:????????.`错误
+
+* 解决一：参考[关于ubuntu安装VMware出现“could not open /dev/vmmon:????????.”的解决方法-已解决](https://blog.csdn.net/weixin_40894428/article/details/84843199)
+* 解决二：查看是否`vmware`相关的`service`是否被关闭了，重新启动即可解决
