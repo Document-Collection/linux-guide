@@ -20,3 +20,11 @@ $ curl https://www.baidu.com
 # 示例
 $ curl -k http://xxx.xxx.xxx:7700
 ```
+
+## 指定Http请求方法
+
+默认为`Get`请求，使用参数`-X`指定
+
+```
+$ curl -X post http://xxx.xxx.xxx:7700
+```
