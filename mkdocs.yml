@@ -65,6 +65,9 @@ nav:
             - '[grep]文本搜索': './tool-use/[grep]文本搜索.md'
             - '[sed]文本替换': './tool-use/[sed]文本替换.md'
             - '[grep][sed]替换目录下所有符合条件的内容': './tool-use/[grep][sed]替换目录下所有符合条件的内容.md'
+        - '复制、粘贴和传送':
+            - '[cp]复制目录下排除某个文件或文件夹外的所有文件': './tool-use/[cp]复制目录下排除某个文件或文件夹外的所有文件.md'
+            - '[rsync]断点续传': './tool-use/[rsync]断点续传.md'
         - '[alias]命令别名设置': './tool-use/[alias]命令别名设置.md'
         - '[SHELL]命令行窗口假死': './tool-use/[SHELL]命令行窗口假死.md'
         - '[sshfs]挂载远程文件系统': './tool-use/[sshfs]挂载远程文件系统.md'
@@ -83,11 +86,9 @@ nav:
         - '[apt]升级操作': './tool-use/[apt]升级操作.md'
         - '[Linux][访问控制]分区和文件系统': './tool-use/[Linux][访问控制]分区和文件系统.md'
         - '系统备份': './tool-use/系统备份.md'
-        - '[cp]复制目录下排除某个文件或文件夹外的所有文件': './tool-use/[cp]复制目录下排除某个文件或文件夹外的所有文件.md'
         - '[ln]软链接和硬链接': './tool-use/[ln]软链接和硬链接.md'
         - '[free]内存容量查询': './tool-use/[free]内存容量查询.md'
         - '[watch]命令监测': './tool-use/[watch]命令监测.md'
-        - '[rsync]断点续传': './tool-use/[rsync]断点续传.md'
     - 访问控制:
         - '[Linux]文件权限.md': './access_control/[Linux]文件权限.md'
         - '[Linux]目录权限.md': './access_control/[Linux]目录权限.md'
