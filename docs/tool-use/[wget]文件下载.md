@@ -51,7 +51,7 @@ $ wget -c --content-disposition 'https://software-download.microsoft.com/sg/Win1
 Win10_2004_English_x64.iso                          1%[>                                                                                                          ]  93.08M  12.8MB/s    剩余 6m 57s^
 ```
 
-## 问题
+## 问题：段错误
 
 快下载完`Win10 ISO`的是否出现了错误
 
@@ -91,4 +91,41 @@ file locks                      (-x) unlimited
 
 ```
 $ ulimit -s  102400
+```
+
+## 问题：错误 403
+
+解析路径后出现如下错误：
+
+```
+...
+错误 403：Forbidden
+```
+
+### 解析
+
+参考：[使用wget或curl时 error 403 forbidden](https://blog.csdn.net/BobYuan888/article/details/88949296)
+
+>使用wget或curl请求资源时被服务器拒绝了，为了防止爬虫等消耗服务器资源，服务器根据你的请求头进行了选择性屏蔽，因此需要修改wget和curl的代理User-Agent来进行伪装。
+
+### 解决
+
+参考：[什么是UserAgent以及使用浏览器查看UserAgent的方法](https://blog.csdn.net/BobYuan888/article/details/88950275)
+
+登录`Chrome`，输入`chrome://version/`，寻找`用户代理`选项
+
+```
+Google Chrome	83.0.4103.61 (正式版本) （64 位）
+修订版本	94f915a8d7c408b09cc7352161ad592299f384d2-refs/branch-heads/4103@{#561}
+操作系统	Linux
+JavaScript	V8 8.3.110.9
+Flash	32.0.0.387 /home/zj/.config/google-chrome/PepperFlash/32.0.0.387/libpepflashplayer.so
+用户代理	Mozixx/5.0 (X11; Linux x86_64) xxxxt/537.36 (KHTML, like Gecko) Chrome/xxxx3.61 xxari/537.36                 ------ 在这里
+命令行	/usr/bin/google-chrome-stable --flag-switches-begin --flag-switches-end --disable-webrtc-apm-in-audio-service
+```
+
+下载`wget`时使用`-U`参数
+
+```
+wget xxx.xxx.xxx -U "用户代理"
 ```
