@@ -65,7 +65,13 @@ Win10_2004_English_x64.iso                          1%[>                        
 
 ### 解决二
 
-参考[“段错误 (核心已转储) ”一种可能原因及其解决方法](https://blog.csdn.net/dahailantian1/articl)，扩大系统的堆栈空间
+参考：
+
+[“段错误 (核心已转储) ”一种可能原因及其解决方法](https://blog.csdn.net/dahailantian1/articl)
+
+[ubuntu段错误（核心已转储）（待测试继续）](https://www.jianshu.com/p/de078af80bd5)
+
+扩大系统的堆栈空间
 
 ```
 $ ulimit -a
@@ -92,6 +98,8 @@ file locks                      (-x) unlimited
 ```
 $ ulimit -s  102400
 ```
+
+*注意：需要在同一命令行窗口下执行`ulimit`和`wget`*
 
 ## 问题：错误 403
 
