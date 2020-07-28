@@ -92,6 +92,7 @@ nav:
         - '[wget]文件下载': './tool-use/[wget]文件下载.md'
         - '[curl]网页调试': './tool-use/[curl]网页调试.md'
         - '[控制台窗口][快捷键]复制和粘贴': './tool-use/[控制台窗口][快捷键]复制和粘贴.md'
+        - '[wc]统计目录中文件个数': './tool-use/[wc]统计目录中文件个数.md'
     - 访问控制:
         - '[Linux]文件权限.md': './access_control/[Linux]文件权限.md'
         - '[Linux]目录权限.md': './access_control/[Linux]目录权限.md'
