@@ -80,6 +80,7 @@ nav:
         - '[fcitx]重启输入法': './tool-use/[fcitx]重启输入法.md'
         - '[nautilus]重启文件管理器': './tool-use/[nautilus]重启文件管理器.md'
 
+        - '[free]内存使用查询': './tool-use/[free]内存使用查询.md'
         - '[apt-get][apt-cache][dpkg]查询、安装、卸载和清理': './tool-use/[apt-get][apt-cache][dpkg]查询、安装、卸载和清理.md'
         - '查询阻塞进程并杀死': './tool-use/查询阻塞进程并杀死.md'
         - '删除陈旧的APT仓库': './tool-use/删除陈旧的APT仓库.md'
