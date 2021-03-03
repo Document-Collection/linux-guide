@@ -96,6 +96,7 @@ nav:
         - '[wc]统计目录中文件个数': './tool-use/[wc]统计目录中文件个数.md'
         - '[eog]命令行图像查看工具': './tool-use/[eog]命令行图像查看工具.md'
         - '[unrar]解压缩rar文件': './tool-use/[unrar]解压缩rar文件.md'
+        - '[split][cat]分块或合并大文件': './tool-use/[split][cat]分块或合并大文件.md'
     - 访问控制:
         - '[Linux]文件权限.md': './access_control/[Linux]文件权限.md'
         - '[Linux]目录权限.md': './access_control/[Linux]目录权限.md'
