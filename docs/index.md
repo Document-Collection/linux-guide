@@ -1,3 +1,4 @@
+# 本仓库不再维护，更新的内容前往：[ZJDoc/LinuxGuide](https://github.com/ZJDoc/LinuxGuide)
 
 # 引言
 
